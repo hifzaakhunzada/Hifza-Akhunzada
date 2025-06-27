@@ -1,0 +1,232 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  padding-top: 54px;
+  color: #333333;
+  background-color: #f8f9fa;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #212529;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 3.5rem;
+  color: #2c3e50;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #34495e;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #7f8c8d;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
+  color: #3498db;
+}
+
+/* Social Icons */
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #ecf0f1;
+  color: #2c3e50 !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: #3498db;
+  color: white !important;
+  transform: translateY(-3px);
+}
+
+/* Skills Icons */
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i {
+  color: #95a5a6;
+  transition: all 0.3s ease;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: #3498db;
+  transform: scale(1.2);
+}
+
+/* Navigation */
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  color: #2c3e50;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #2980b9;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+    background-color: #ecf0f1;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(155, 155, 155, 0.2);
+    border-radius: 50%;
+  }
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+/* Sections */
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: 75rem;
+  background-color: #ffffff;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+/* Utility Classes */
+.bg-primary {
+  background-color: #3498db !important;
+}
+
+.text-primary {
+  color: #3498db !important;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover, a:focus, a:active {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Custom Icons */
+.custom-icon {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Fix for navbar toggler in mobile view */
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
